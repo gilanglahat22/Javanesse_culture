@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GeneralQuizActivity"
+    android:fillViewport="true"
+    android:background="@color/red"
+    android:id="@+id/result_view">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp"
+        android:gravity="top|center">
+
+        <TextView
+            android:id="@+id/tv_general_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/brandon_grotesque_bold_webfont"
+            android:textSize="49sp"
+            android:text="Results"
+            />
+
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:src="@drawable/trophy_image"
+            android:layout_marginTop="-10dp"
+            android:layout_marginRight="60dp"
+            android:gravity="start"
+            android:contentDescription="Option Arrow" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginTop="00dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="10dp" >
+
+            <TextView
+                android:id="@+id/greet_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="Dylan"
+                android:textColor="@color/yellow"
+                android:fontFamily="@font/brandon_grotesque_bold_webfont"
+                android:textSize="28sp"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="70dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:paddingBottom="30dp"
+                android:textColor="@color/yellow"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textSize="22sp"
+                tools:text="You scored a total of 8 out of 10 for History"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/dark_grey"
+            android:padding="20dp"
+            android:textSize="16dp"
+            android:text="FINISH"
+            android:fontFamily="@font/proxima_nova_semibold" />
+
+    </LinearLayout>
+
+</ScrollView>

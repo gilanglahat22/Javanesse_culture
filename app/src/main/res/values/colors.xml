@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#DC001A</color>
+    <color name="light_blue">#2493D4</color>
+    <color name="yellow">#FFA300</color>
+    <color name="black">#000000</color>
+    <color name="dark_grey">#131313</color>
+    <color name="light_grey">#B4B4B4</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#76A12E</color>
+    <color name="dark_red">#9F0013</color>
+    <color name="mtrl_textinput_default_box_stroke_color">@color/red</color>
+
+</resources>

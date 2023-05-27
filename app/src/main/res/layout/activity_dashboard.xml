@@ -266,7 +266,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/history_category_icon"
+                    android:src="@drawable/musik_dan_tarian"
                     android:layout_marginTop="18dp"
                     android:layout_marginLeft="30dp"
                     android:layout_gravity="left"

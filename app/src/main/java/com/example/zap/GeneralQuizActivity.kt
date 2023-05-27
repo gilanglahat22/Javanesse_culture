@@ -83,6 +83,7 @@ class GeneralQuizActivity : AppCompatActivity(), View.OnClickListener {
         tv_general_option_two.text = generalQuestion.optionTwo
         tv_general_option_three.text = generalQuestion.optionThree
 
+
     }
 
     private fun defaultOptionsView() {

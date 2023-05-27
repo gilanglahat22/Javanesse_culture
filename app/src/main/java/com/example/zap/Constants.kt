@@ -23,8 +23,7 @@ object Constants {
             "Jawa Tengah",
             "Jawa Timur",
             "Jawa Barat",
-            1,
-            "R.drawable.rumah_joglo")
+            1)
         generalQuestionsList.add(genQuestion1)
 
         val genQuestion2 = Question(2, "Rumah adat Osing merupakan rumah adat dari daerah?", "General",
@@ -32,8 +31,7 @@ object Constants {
             "Bandung",
             "Magelang",
             "Banyuwangi",
-            3,
-            "R.drawable.rumah_joglo")
+            3)
         generalQuestionsList.add(genQuestion2)
 
         val genQuestion3 = Question(3, "Rumah Dhurung merupakan rumah adat yang berasal dari?", "General",
@@ -41,8 +39,7 @@ object Constants {
             "Pulau Miangas",
             "Pulau Bawean Gresik",
             "Pulau Rote",
-            2,
-            "R.drawable.rumah_joglo")
+            2)
         generalQuestionsList.add(genQuestion3)
 
         val genQuestion4 = Question(4, "Rumah adat joglo sinom merupakan rumah adat dari daerah?", "General",
@@ -50,8 +47,7 @@ object Constants {
             "Jawa Tengah",
             "Jawan Timur",
             "Jawa Barat",
-            2,
-            "R.drawable.rumah_joglo")
+            2)
         generalQuestionsList.add(genQuestion4)
 
         val genQuestion5 = Question(5, "Rumah Limas berasal dari daerah?", "General",
@@ -59,8 +55,7 @@ object Constants {
                 "Padang",
                 "Jakarta",
                 "Palembang",
-                3,
-                "R.drawable.rumah_joglo")
+                3)
         generalQuestionsList.add(genQuestion5)
 
         val genQuestion6 = Question(6, "Rumah Adat Suku Tengger berasal dari daerah?", "General",
@@ -68,8 +63,7 @@ object Constants {
                 "Probolinggo",
                 "Manado",
                 "Makasar",
-                1,
-                "R.drawable.rumah_joglo")
+                1)
         generalQuestionsList.add(genQuestion6)
 
         Collections.shuffle(generalQuestionsList)
@@ -85,8 +79,7 @@ object Constants {
                 "Black",
                 "Grey",
                 "Red",
-                2,
-                 "R.drawable.rumah_joglo")
+                2)
         historyQuestionsList.add(hisQuestion1)
 
         val hisQuestion2 = Question(2, "Which superhero was supposed to be bald in his debut?", "History",
@@ -94,8 +87,7 @@ object Constants {
                 "Professor X",
                 "Apocalypse",
                 "Superman",
-                3,
-             "R.drawable.rumah_joglo")
+                3)
         historyQuestionsList.add(hisQuestion2)
 
         val hisQuestion3 = Question(3, "Who was the first superhero created in the history of superheroes?", "History",
@@ -103,8 +95,7 @@ object Constants {
                 "The Phantom",
                 "The Comet",
                 "Superman",
-                1,
-            "R.drawable.rumah_joglo")
+                1)
         historyQuestionsList.add(hisQuestion3)
 
         val hisQuestion4 = Question(4, "What is the original age of the Black Widow?", "History",
@@ -112,8 +103,7 @@ object Constants {
                 "48 Years",
                 "54 Years",
                 "70 Years",
-                3,
-            "R.drawable.rumah_joglo")
+                3)
         historyQuestionsList.add(hisQuestion4)
 
         val hisQuestion5 = Question(5, "Who made Captain America’s shield?", "History",
@@ -121,8 +111,7 @@ object Constants {
                 "United States Army",
                 "Howard Stark",
                 "Roosevelt",
-                2,
-            "R.drawable.rumah_joglo")
+                2)
         historyQuestionsList.add(hisQuestion5)
 
         val hisQuestion6 = Question(6, "What was the originally proposed shape of Captain America’s shield?", "History",
@@ -130,8 +119,7 @@ object Constants {
                 "Pavise-shaped",
                 "Kite-shaped",
                 "Herladic-shaped",
-                3,
-            "R.drawable.rumah_joglo")
+                3)
         historyQuestionsList.add(hisQuestion6)
 
         val hisQuestion7 = Question(7, "Who is this superhero who first appeared in the Marvel universe in 1962?", "History",
@@ -139,8 +127,7 @@ object Constants {
                 "The Hulk",
                 "The Abomination",
                 "Mr.Sinister",
-                1,
-            "R.drawable.rumah_joglo")
+                1)
         historyQuestionsList.add(hisQuestion7)
 
         val hisQuestion8 = Question(8, "In which back-to-back years did Superman and Batman debut?", "History",
@@ -148,8 +135,7 @@ object Constants {
                 "1942 and 1943",
                 "1938 and 1939",
                 "1953 and 1954",
-                2,
-            "R.drawable.rumah_joglo")
+                2)
         historyQuestionsList.add(hisQuestion8)
 
         Collections.shuffle(historyQuestionsList)
@@ -165,8 +151,7 @@ object Constants {
             "Jarvis",
             "Pepper Lots",
             "Pepper Pots",
-            3,
-            "R.drawable.rumah_joglo")
+            3)
         moviesQuestionsList.add(movQuestion1)
 
         val movQuestion2 = Question(2, "What relation are Sue and Johnny in Fantastic Four?", "Movies",
@@ -174,8 +159,7 @@ object Constants {
             "Brother and Sister",
             "Aunt and Uncle",
             "Cousin and Nephew",
-            1,
-            "R.drawable.rumah_joglo")
+            1)
         moviesQuestionsList.add(movQuestion2)
 
         val movQuestion3 = Question(3, "In which 2000 movie did James Marsden play the character Cyclops?", "Movies",
@@ -183,8 +167,7 @@ object Constants {
             "Superman",
             "Avengers",
             "X-Men",
-            3,
-            "R.drawable.rumah_joglo")
+            3)
         moviesQuestionsList.add(movQuestion3)
 
         val movQuestion4 = Question(4, "Who plays Mary Jane in the movie Spider-Man 3?", "Movies",
@@ -192,8 +175,7 @@ object Constants {
             "Shailene Woodley",
             "Kirsten Dunst",
             "Tara Strong",
-            2,
-            "R.drawable.rumah_joglo")
+            2)
         moviesQuestionsList.add(movQuestion4)
 
         val movQuestion5 = Question(5, "What villain returns from Latveria in 2007's 4: Rise of the Silver Surfer?", "Movies",
@@ -201,8 +183,7 @@ object Constants {
             "Galactus",
             "Victor Von Doom",
             "Annihilus",
-            2,
-            "R.drawable.rumah_joglo")
+            2)
         moviesQuestionsList.add(movQuestion5)
 
         val movQuestion6 = Question(6, "What is the name of the lake where the final scenes of X-Men 2 take place?", "Movies",
@@ -210,8 +191,7 @@ object Constants {
             "Alkali Lake",
             "Lake Simcoe",
             "Lake Athabasca",
-            1,
-            "R.drawable.rumah_joglo")
+            1)
         moviesQuestionsList.add(movQuestion6)
 
         val movQuestion7 = Question(7, "Who was sucked into the portal at the beginning of Hellboy?", "Movies",
@@ -219,8 +199,7 @@ object Constants {
             "Grigori Rasputin",
             "Ogdru Jahad",
             "Hellboy",
-            1,
-            "R.drawable.rumah_joglo")
+            1)
         moviesQuestionsList.add(movQuestion7)
 
         val movQuestion8 = Question(8, "In which back-to-back years did Superman and Batman debut?", "Movies",
@@ -228,8 +207,7 @@ object Constants {
             "Batman Begins",
             "Batman Forever",
             "Batman and Robin",
-            3,
-            "R.drawable.rumah_joglo")
+            3)
         moviesQuestionsList.add(movQuestion8)
 
         Collections.shuffle(moviesQuestionsList)
@@ -245,8 +223,7 @@ object Constants {
             "The Silver Surfer",
             "Ultra Boy",
             "Star Fire",
-            3,
-            "R.drawable.rumah_joglo")
+            3)
         comicsQuestionsList.add(comQuestion1)
 
         val comQuestion2 = Question(2, "Edwin Jarvis serves as butler to what superteam?", "Comics",
@@ -254,8 +231,7 @@ object Constants {
             "Justice League",
             "Avengers",
             "Teen Titans",
-            2,
-            "R.drawable.rumah_joglo")
+            2)
         comicsQuestionsList.add(comQuestion2)
 
         val comQuestion3 = Question(3, "What year was the first modern comic book printed?", "Comics",
@@ -263,8 +239,7 @@ object Constants {
             "1938",
             "1917",
             "1933",
-            3,
-            "R.drawable.rumah_joglo")
+            3)
         comicsQuestionsList.add(comQuestion3)
 
         val movQuestion4 = Question(4, "What superhero gained his powers after being exposed to the Orb of Ra?", "Comics",
@@ -272,8 +247,7 @@ object Constants {
             "Metamorhpo",
             "Doctor Strange",
             "Hawkman",
-            1,
-            "R.drawable.rumah_joglo")
+            1)
         comicsQuestionsList.add(movQuestion4)
 
         val comQuestion5 = Question(5, "Which of the following heroes was NOT a member of the magically powered Sentinels of Magic?", "Comics",
@@ -281,8 +255,7 @@ object Constants {
             "Doctor Strange",
             "Raven",
             "Zatanna",
-            1,
-            "R.drawable.rumah_joglo")
+            1)
         comicsQuestionsList.add(comQuestion5)
 
         val comQuestion6 = Question(6, "What is the best-selling comic book of all time?", "Comics",
@@ -290,8 +263,7 @@ object Constants {
             "Batman",
             "X-Men",
             "Superman",
-            2,
-            "R.drawable.rumah_joglo")
+            2)
         comicsQuestionsList.add(comQuestion6)
 
         val comQuestion7 = Question(7, "What was the first comic book to feature a recurring character?", "Comics",
@@ -299,8 +271,7 @@ object Constants {
             "Max and Moritz",
             "Historie De M. Vieux Bois",
             "Ally Sloper's Half Holiday",
-            3,
-            "R.drawable.rumah_joglo")
+            3)
         comicsQuestionsList.add(comQuestion7)
 
         val comQuestion8 = Question(8, "What was first introduced in Detective Comics #29?", "Comics",
@@ -308,12 +279,16 @@ object Constants {
             "The Batmobile",
             "Robin",
             "Batman’s Utility Belt",
-            3,
-            "R.drawable.rumah_joglo")
+            3)
         comicsQuestionsList.add(comQuestion8)
 
         Collections.shuffle(comicsQuestionsList)
         return comicsQuestionsList
+    }
+
+    fun generalMateris(): ArrayList<Materi>{
+        val generalMaterisList = ArrayList<Materi>()
+        return generalMaterisList
     }
 
 }

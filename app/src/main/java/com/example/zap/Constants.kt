@@ -18,53 +18,37 @@ object Constants {
     fun generalQuestions(): ArrayList<Question> {
         val generalQuestionsList = ArrayList<Question>()
 
-        val genQuestion1 = Question(1, "Rumah adat Joglo merupakan rumah adat dari daerah?", "General",
-        R.drawable.general_category_image,
-            "Jawa Tengah",
-            "Jawa Timur",
-            "Jawa Barat",
-            1)
-        generalQuestionsList.add(genQuestion1)
-
-        val genQuestion2 = Question(2, "Rumah adat Osing merupakan rumah adat dari daerah?", "General",
-            R.drawable.general_category_image,
-            "Bandung",
-            "Magelang",
-            "Banyuwangi",
-            3)
-        generalQuestionsList.add(genQuestion2)
-
-        val genQuestion3 = Question(3, "Rumah Dhurung merupakan rumah adat yang berasal dari?", "General",
+        val genQuestion1 = Question(1, "Rumah Dhurung merupakan rumah adat yang berasal dari?", "General",
             R.drawable.general_category_image,
             "Pulau Miangas",
             "Pulau Bawean Gresik",
             "Pulau Rote",
             2)
-        generalQuestionsList.add(genQuestion3)
+        generalQuestionsList.add(genQuestion1)
 
-        val genQuestion4 = Question(4, "Rumah adat joglo sinom merupakan rumah adat dari daerah?", "General",
+        val genQuestion2 = Question(2, "Rumah adat Joglo Sinom merupakan rumah adat dari daerah?", "General",
             R.drawable.general_category_image,
             "Jawa Tengah",
             "Jawan Timur",
             "Jawa Barat",
             2)
-        generalQuestionsList.add(genQuestion4)
+        generalQuestionsList.add(genQuestion2)
 
-        val genQuestion5 = Question(5, "Rumah Limas berasal dari daerah?", "General",
-                R.drawable.general_category_image,
-                "Padang",
-                "Jakarta",
-                "Palembang",
-                3)
-        generalQuestionsList.add(genQuestion5)
+        val genQuestion3 = Question(3, "Rumah Adat Suku Tengger berasal dari daerah?", "General",
+            R.drawable.general_category_image,
+            "Probolinggo",
+            "Gresik",
+            "Madura",
+            1)
+        generalQuestionsList.add(genQuestion3)
 
-        val genQuestion6 = Question(6, "Rumah Adat Suku Tengger berasal dari daerah?", "General",
+        val genQuestion4 = Question(4, "Rumah Adat Suku Tengger berasal dari daerah?", "General",
                 R.drawable.general_category_image,
                 "Probolinggo",
-                "Manado",
-                "Makasar",
+                "Gresik",
+                "Madura",
                 1)
-        generalQuestionsList.add(genQuestion6)
+        generalQuestionsList.add(genQuestion4)
 
         Collections.shuffle(generalQuestionsList)
         return generalQuestionsList
@@ -288,7 +272,67 @@ object Constants {
 
     fun generalMateris(): ArrayList<Materi>{
         val generalMaterisList = ArrayList<Materi>()
+        val genMateri1 = Materi(1, "Rumah adat Dhurung merupakan rumah adat yang berasal dari daerah Gresik, Jawa Timur.", "General",
+            R.drawable.rumah_dhurung)
+        generalMaterisList.add(genMateri1)
+        val genMateri3 = Materi(2, "Rumah adat Joglo Sinom merupakan rumah adat yang berasal dari daerah Jawa Timur.", "General",
+            R.drawable.rumah_adat_joglo_sinom)
+        generalMaterisList.add(genMateri3)
+        val genMateri4 = Materi(3, "Rumah adat Osing merupakan rumah adat yang berasal dari Banyuwangi, Jawa Timur.", "General",
+            R.drawable.rumah_adat_osing)
+        generalMaterisList.add(genMateri4)
+        val genMateri5 = Materi(4, "Rumah adat Suku Tengger yang memiliki tempat duduk yang disebut Bale-Bale.", "General",
+            R.drawable.rumah_bale_bale)
+        generalMaterisList.add(genMateri5)
         return generalMaterisList
     }
 
+    fun historyMateris(): ArrayList<Materi>{
+        val historyMaterisList = ArrayList<Materi>()
+        val hisMateri1 = Materi(1, "Alat musik Bonang yang di ada di Jawa Timur merupakan alat musik daerah yang dimainkan dengan cara dipukul dengan menggunakan wilaga.", "General",
+            R.drawable.alat_musik_bonang)
+        historyMaterisList.add(hisMateri1)
+        val hisMateri2 = Materi(2, "Alat musik angklung caruk merupakan alat musik angklung yang berasal dari Banyuwangi, Jawa Timur.", "General",
+            R.drawable.angklung_caruk)
+        historyMaterisList.add(hisMateri2)
+        val hisMateri3 = Materi(3, "Gendang merupakan alat musik pukul yang umum dijumpai di beberapa daerah di Indonesia, termasuk di Jawa Timur.", "General",
+            R.drawable.alat_musik_gendang)
+        historyMaterisList.add(hisMateri3)
+        val hisMateri4 = Materi(4, "Suling Bambu merupakan alat musik tiup yang berasal dari Jawa Timur yang paling sering dijumpai dalam kehidupan sehari-hari.", "General",
+            R.drawable.suling_bambu)
+        historyMaterisList.add(hisMateri4)
+        val hisMateri5 = Materi(5, "Tari Reog merupakan tarian tradisional yang berasal dari Ponorogo, Jawa Timur.", "General",
+            R.drawable.reog_ponorogo)
+        historyMaterisList.add(hisMateri5)
+        val hisMateri6 = Materi(6, "Tari Kuda Lumping atau Jaran kepang adalah tarian tradisional Jawa yang berasal dari Ponorogo, Jawa Timur.", "General",
+            R.drawable.kuda_lumping)
+        historyMaterisList.add(hisMateri6)
+        val hisMateri7 = Materi(7, "Tari Jaranan Buto adalah salah satu kesenian dari Kabupaten Banyuwangi Provinsi Jawa Timur yang saat ini masih digemari masyarakat Banyuwangi. Tari tersebut menggunakan properti kuda, pecut, celeng dan barongan buto, seperti halnya yang ada pada Kesenian Kuda Lumping, Jaran Kepang atau Tari Jathilan.", "General",
+            R.drawable.jaranan_buto)
+        historyMaterisList.add(hisMateri7)
+        val hisMateri8 = Materi(8, "Tari remo merupakan tarian khas Jawa Timur yang berasal dari Kabupaten Jombang. Tari yang awalnya dihadirkan sebagai pembuka pagelaran seni ludruk dan wayang kulit ini berkembang meluas hampir diseluruh wilayah Jawa Timur.", "General",
+            R.drawable.tari_remo)
+        historyMaterisList.add(hisMateri8)
+        return historyMaterisList
+    }
+
+    fun moviesMateris(): ArrayList<Materi>{
+        val movieMaterisList = ArrayList<Materi>()
+        val hisMateri1 = Materi(1, "Rumah adat Dhurung merupakan rumah adat yang berasal dari daerah Gresik, Jawa Timur.", "General",
+            R.drawable.rumah_dhurung)
+        movieMaterisList.add(hisMateri1)
+        val hisMateri2 = Materi(2, "Rumah adat Joglo merupakan rumah adat yang berasal dari daerah Jawa Tengah.", "General",
+            R.drawable.rumah_adat_joglo)
+        movieMaterisList.add(hisMateri2)
+        val hisMateri3 = Materi(3, "Rumah adat Joglo Sinom merupakan rumah adat yang berasal dari daerah Jawa Timur.", "General",
+            R.drawable.rumah_adat_joglo_sinom)
+        movieMaterisList.add(hisMateri3)
+        val hisMateri4 = Materi(4, "Rumah adat Osing merupakan rumah adat yang berasal dari Banyuwangi, Jawa Timur.", "General",
+            R.drawable.rumah_adat_osing)
+        movieMaterisList.add(hisMateri4)
+        val hisMateri5 = Materi(5, "Rumah adat Suku Tengger yang memiliki tempat duduk yang disebut Bale-Bale.", "General",
+            R.drawable.rumah_bale_bale)
+        movieMaterisList.add(hisMateri5)
+        return movieMaterisList
+    }
 }

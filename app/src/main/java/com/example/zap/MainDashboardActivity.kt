@@ -28,12 +28,19 @@ class MainDashboardActivity: AppCompatActivity() {
 
         //Get TextView in Frontend
         val tv_greeting = findViewById<TextView>(R.id.greet_name)
+        val learn_category = findViewById<CardView>(R.id.learn_category)
         val quiz_category = findViewById<CardView>(R.id.quiz_category)
         //Get the Intent with the name from Activity Main
         val userName = sharedPref.getString(Constants.USERNAME, "User")
 
         //Set the Greeting Text
         tv_greeting.text = userName
+
+        learn_category.setOnClickListener{
+            val intent = Intent(this, DashboardMateriActivity::class.java)
+            intent.putExtra(Constants.USERNAME, userName)
+            startActivity(intent);
+        }
 
         quiz_category.setOnClickListener{
             val intent = Intent(this, DashboardActivity::class.java)

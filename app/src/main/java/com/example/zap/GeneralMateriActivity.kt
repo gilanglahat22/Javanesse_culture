@@ -35,6 +35,8 @@ class GeneralMateriActivity: AppCompatActivity(), View.OnClickListener {
         var btn_kembali = findViewById<Button>(R.id.btn_kembali)
         btn_lanjut.setOnClickListener(this)
         btn_kembali.setOnClickListener(this)
+        btn_kembali.setEnabled(true)
+        btn_lanjut.setEnabled(true)
     }
 
     private fun setGeneralMateri() {
@@ -58,30 +60,46 @@ class GeneralMateriActivity: AppCompatActivity(), View.OnClickListener {
         var general_category_bottom_image = findViewById<ImageView>(R.id.general_category_bottom_image)
 
         general_progressbar.progress = mCurrentPosition
-        tv_general_progress.text = "$mCurrentPosition" + "/" + 6
+        tv_general_progress.text = "$mCurrentPosition" + "/" + 5
         tv_general_materi.text = generalMateri!!.materi
         general_category_bottom_image.setImageResource(generalMateri.categoryImage)
 
     }
 
     override fun onClick(v: View?) {
-        var btn_are_you_correct = findViewById<Button>(R.id.btn_are_you_correct)
-
-        btn_are_you_correct.setEnabled(false)
+        var btn_lanjut = findViewById<Button>(R.id.btn_lanjut)
+        var btn_kembali = findViewById<Button>(R.id.btn_kembali)
+        btn_lanjut.setEnabled(true)
+        btn_kembali.setEnabled(true)
 
         when(v?.id) {
-            R.id.btn_are_you_correct ->{
+            R.id.btn_lanjut ->{
                 mCurrentPosition ++
                 when {
                     mCurrentPosition <= mGeneralMaterisList!!.size -> {
                         setGeneralMateri()
                     }
                     else -> {
-                        val intent = Intent(this, MainActivity::class.java)
+                        val intent = Intent(this, DashboardMateriActivity::class.java)
                         intent.putExtra(Constants.CATEGORY, mCategory)
                         intent.putExtra(Constants.USERNAME, mUsername)
                         intent.putExtra("materi_total", mGeneralMaterisList!!.size)
                         startActivity(intent)
+                    }
+                }
+            }
+            R.id.btn_kembali ->{
+                mCurrentPosition --
+                when {
+                    mCurrentPosition <= 0 -> {
+                        val intent = Intent(this, DashboardMateriActivity::class.java)
+                        intent.putExtra(Constants.CATEGORY, mCategory)
+                        intent.putExtra(Constants.USERNAME, mUsername)
+                        intent.putExtra("materi_total", mGeneralMaterisList!!.size)
+                        startActivity(intent)
+                    }
+                    else -> {
+                        setGeneralMateri()
                     }
                 }
             }

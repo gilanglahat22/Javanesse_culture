@@ -16,12 +16,20 @@
         <activity android:name=".MoviesQuizActivity" />
         <activity android:name=".HistoryQuizActivity" />
         <activity android:name=".GeneralQuizActivity" />
+        <activity android:name=".ComicsMateriActivity" />
+        <activity android:name=".MoviesMateriActivity" />
+        <activity android:name=".HistoryMateriActivity" />
+        <activity android:name=".GeneralMateriActivity" />
         <activity
             android:name=".MainDashboardActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".DashboardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".DashboardMateriActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity

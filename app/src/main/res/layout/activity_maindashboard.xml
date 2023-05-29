@@ -7,13 +7,13 @@
     tools:context=".MainDashboardActivity"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="#FAA412">
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/logoImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/dashboard_background"
+        android:src="@drawable/background_dashboard_image"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -107,9 +107,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="left"
-                    android:textColor="@color/light_grey"
+                    android:outlineAmbientShadowColor="@color/light_grey"
+                    android:textColor="@color/yellow"
                     android:fontFamily="@font/proxima_nova_regular"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
             </LinearLayout>
 

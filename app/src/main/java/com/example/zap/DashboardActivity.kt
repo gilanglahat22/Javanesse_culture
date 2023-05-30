@@ -2,6 +2,7 @@ package com.example.zap
 
 import android.content.Context
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.AlarmClock.EXTRA_MESSAGE
@@ -10,12 +11,17 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 
 class DashboardActivity : AppCompatActivity() {
+    private lateinit var mediaPlayer: MediaPlayer
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
         //Make the View FullScreen
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+
+        mediaPlayer = MediaPlayer.create(this, R.raw.backsound)
+        mediaPlayer.isLooping = true // Set the music to loop indefinitely
+        mediaPlayer.setVolume(0.5f, 0.5f) // Set the volume (0.0f - 1.0f)
 
         val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
         val editor = sharedPref.edit()
@@ -93,6 +99,20 @@ class DashboardActivity : AppCompatActivity() {
             intent.putExtra(Constants.CATEGORY, mCategoryCom.text.toString())
             startActivity(intent);
         }
+    }
 
+    override fun onStart() {
+        super.onStart()
+        mediaPlayer.start() // Start playing the music
+    }
+    override fun onPause() {
+        super.onPause()
+        mediaPlayer.pause() // Pause the music
+    }
+
+    override fun onStop() {
+        super.onStop()
+        mediaPlayer.stop() // Stop the music
+        mediaPlayer.release() // Release the MediaPlayer resources
     }
 }

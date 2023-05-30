@@ -74,7 +74,7 @@ class GeneralQuizActivity : AppCompatActivity(), View.OnClickListener {
         var tv_general_option_three = findViewById<TextView>(R.id.tv_general_option_three)
 
         general_progressbar.progress = mCurrentPosition
-        tv_general_progress.text = "$mCurrentPosition" + "/" + 6
+        tv_general_progress.text = "$mCurrentPosition" + "/" + 4
         tv_general_question.text = generalQuestion!!.question
         general_category_bottom_image.setImageResource(generalQuestion.categoryImage)
 
@@ -147,6 +147,7 @@ class GeneralQuizActivity : AppCompatActivity(), View.OnClickListener {
                             intent.putExtra(Constants.CORRECT_ANSWERS, mCorrectOptions)
                             intent.putExtra(Constants.QUESTIONS_TOTAL, mGeneralQuestionsList!!.size)
                             startActivity(intent)
+                            finish()
                         }
                     }
                 } else {

@@ -53,4 +53,14 @@ class MainDashboardActivity: AppCompatActivity() {
         super.onStart()
         mediaPlayer.start() // Start playing the music
     }
+    override fun onPause() {
+        super.onPause()
+        mediaPlayer.pause() // Pause the music
+    }
+
+    override fun onStop() {
+        super.onStop()
+        mediaPlayer.stop() // Stop the music
+        mediaPlayer.release() // Release the MediaPlayer resources
+    }
 }

@@ -3,10 +3,4 @@
 
     <item android:drawable="@color/white"></item>
 
-    <item
-        android:drawable="@drawable/splash_logo"
-        android:width="200dp"
-        android:height="200dp"
-        android:gravity="center"/>
-
 </layer-list>

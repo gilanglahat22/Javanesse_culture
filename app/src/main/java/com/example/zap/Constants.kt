@@ -318,21 +318,71 @@ object Constants {
 
     fun moviesMateris(): ArrayList<Materi>{
         val movieMaterisList = ArrayList<Materi>()
-        val hisMateri1 = Materi(1, "Rumah adat Dhurung merupakan rumah adat yang berasal dari daerah Gresik, Jawa Timur.", "General",
-            R.drawable.rumah_dhurung)
-        movieMaterisList.add(hisMateri1)
-        val hisMateri2 = Materi(2, "Rumah adat Joglo merupakan rumah adat yang berasal dari daerah Jawa Tengah.", "General",
-            R.drawable.rumah_adat_joglo)
-        movieMaterisList.add(hisMateri2)
-        val hisMateri3 = Materi(3, "Rumah adat Joglo Sinom merupakan rumah adat yang berasal dari daerah Jawa Timur.", "General",
-            R.drawable.rumah_adat_joglo_sinom)
-        movieMaterisList.add(hisMateri3)
-        val hisMateri4 = Materi(4, "Rumah adat Osing merupakan rumah adat yang berasal dari Banyuwangi, Jawa Timur.", "General",
-            R.drawable.rumah_adat_osing)
-        movieMaterisList.add(hisMateri4)
-        val hisMateri5 = Materi(5, "Rumah adat Suku Tengger yang memiliki tempat duduk yang disebut Bale-Bale.", "General",
-            R.drawable.rumah_bale_bale)
-        movieMaterisList.add(hisMateri5)
+        val movieMateri1 = Materi(1, "Suku terbesar yang ada di Pulau Jawa adalah Suku Jawa.", "General",
+            R.drawable.suku_jawa)
+        movieMaterisList.add(movieMateri1)
+        val movieMateri2 = Materi(2, "Suku Samin merupakan suku yang mendiami wilayah Bojonegoro, Jawa Timur.", "General",
+            R.drawable.suku_samin)
+        movieMaterisList.add(movieMateri2)
+        val movieMateri3 = Materi(3, "Suku Madura merupakan suku yang mendiami wilayah Madura, Jawa Timur.", "General",
+            R.drawable.suku_madura)
+        movieMaterisList.add(movieMateri3)
+        val movieMateri4 = Materi(4, "Suku Tengger merupakan penduduk asli daerah dataran tinggi di sekitar pegunungan Tengger, Bromo, dan Semeru yang terletak di Jawa Timur.", "General",
+            R.drawable.suku_tengger)
+        movieMaterisList.add(movieMateri4)
+        val movieMateri5 = Materi(5, "Suku Bawean merupakan masyarakat yang mendiami Pulau Bawean yaitu Bagian utara Kabupaten Gresik, Jawa Timur.", "General",
+            R.drawable.suku_bawean)
+        movieMaterisList.add(movieMateri5)
+        val movieMateri6 = Materi(6, "Keris merupakan senjata tradisional Jawa Timur yang memiliki ujung lancip serta kedua sisinya tajam.", "General",
+            R.drawable.keris)
+        movieMaterisList.add(movieMateri6)
+        val movieMateri7 = Materi(7, "Celurit merupakan senjata tradisional ini berasal dari Suku Madura. Celurit memiliki tiga kegunaan utama, yakni sebagai senjata peperangan, perlengkapan berkebun dan bertani serta instrumen dalam upacara adat.", "General",
+            R.drawable.celurit)
+        movieMaterisList.add(movieMateri7)
+        val movieMateri8 = Materi(8, "Kudi adalah senjata khas Jawa Timur yang memiliki bentuk mirip dengan senjata Kujang Jawa Barat. Kudi digunakan untuk pekerjaan kasar dan juga pertahanan diri rakyat Jawa Timur.", "General",
+            R.drawable.kudi)
+        movieMaterisList.add(movieMateri8)
+        val movieMateri9 = Materi(9, "Bunding adalah senjata berbentuk pisau besar yang mirip deperti golok dengan sarung yang terbuat dari kayu. Bunding berasal dari Suku Using Banyuwangi yang digunakan untuk melakukan pekerjaan, mempertahankan diri dari serangan binatang buas, dan ancaman musuh.", "General",
+            R.drawable.bunding)
+        movieMaterisList.add(movieMateri9)
+        val movieMateri10 = Materi(10, "Caluk merupakan senjata tradisional asal Jawa Timur , tepatnya Kabupaten Tuban. Caluk berbentuk seperti golok sepanjang 1 meter yang terdapat kapak dibagian tengah bilahnya.", "General",
+            R.drawable.caluk)
+        movieMaterisList.add(movieMateri10)
         return movieMaterisList
+    }
+
+    fun comicsMateris(): ArrayList<Materi>{
+        val comicsMaterisList = ArrayList<Materi>()
+        val comicsMateri1 = Materi(1, "Pakaian adat Jawa Timur ini khusus digunakan oleh pengantin atau yang dalam bahasa Jawa disebut dengan “manten”. Pakaian ini dikenakan kedua mempelai pada saat melakukan prosesi pernikahan dengan menggunakan adat Jawa Timur. Namun ada pula yang hanya mengadopsi pakaiannya saja, tetapi tidak melakukan prosesi pernikahan dengan lengkap.", "General",
+            R.drawable.baju_mantenan)
+        comicsMaterisList.add(comicsMateri1)
+        val comicsMateri2 = Materi(2, "Baju Sakera merupakan baju khas daerah Madura yang memiliki motif garis-garis merah dan putih, bahannya bisa berupa kaos ataupun kain katun. Pakaian khas pria Madura ini sering dikenakan dalam berbagai acara adat.", "General",
+            R.drawable.baju_sakera)
+        comicsMaterisList.add(comicsMateri2)
+        val comicsMateri3 = Materi(3, "Pakaian Cak dan Ning merupakan Pakaian adat Jawa Timur yang mana dari namanya yakni, Cak merupakan panggilan untuk laki-laki muda. Sedangkan Ning, panggilan untuk perempuan atau gadis.", "General",
+            R.drawable.pakaian_cak_ning)
+        comicsMaterisList.add(comicsMateri3)
+        val comicsMateri4 = Materi(4, "Baju pesa'an adalah baju adat khas dari Madura, provinsi Jawa Timur. Baju Pesa'an menjadi salah satu simbol utama yang menjadi wakil budaya baju adat Jawa Timur di Nusantara. Baju Pesa'an ini bisa digunakan pada acara-acara penting masyarakat Madura seperti acara upacara pernikahan ataupun acara penting lainnya.", "General",
+            R.drawable.baju_pesaan)
+        comicsMaterisList.add(comicsMateri4)
+        val comicsMateri5 = Materi(5, "Penadon adalah baju adat yang berasal dari daerah Ponorogo. Baju ini mirip dengan baju tradisional dari Madura, yaitu baju pe’sean. Akan tetapi ada sedikit perbedaan, yaitu baju penadon ditambahkan gambar reog atau barong sebagai ikon kesenian dari kota Ponorogo.", "General",
+            R.drawable.baju_panadhon)
+        comicsMaterisList.add(comicsMateri5)
+        val comicsMateri6 = Materi(6, "Rawon adalah adalah salah satu makanan atau hidangan tertua yang ada dalam sejarah Jawa kuno yang terkenal berasal dari Surabaya, Jawa Timur. Rawon sudah ada sejak sembilan ratus satu masehi atau lebih tepatnya sudah ada sejak era Kerajaan Mataram.", "General",
+            R.drawable.rawon)
+        comicsMaterisList.add(comicsMateri6)
+        val comicsMateri7 = Materi(7, "Rujak Cingur adalah Makanan khas kota Surabaya, Jawa Timur yang berisi berbagai macam jenis sayuran dan buah. Sayuran dan buah tersebut ada krai, tauge, kangkung, nanas, kacang panjang, kedondong, dan sebagainya.", "General",
+            R.drawable.rujak_cingur)
+        comicsMaterisList.add(comicsMateri7)
+        val comicsMateri8 = Materi(8, "Soto lamongan adalah soto ayam khas kabupaten Lamongan, Jawa Timur, yang saat ini telah menyebar ke berbagai daerah di Indonesia. Soto lamongan dikenal sebagai salah satu soto paling gurih lantaran memiliki ciri khas taburan koya udang yang tidak dimiliki oleh soto lainnya.", "General",
+            R.drawable.soto_lamongan)
+        comicsMaterisList.add(comicsMateri8)
+        val comicsMateri9 = Materi(9, "Bakso Malang adalah hidangan bakso yang banyak ditemui di seluruh belahan Kota Malang dan Kabupaten Malang, Jawa Timur. Mirip dengan hidangan bakso lainnya, hidangan tersebut terdiri dari daging yang dibentuk bundar dan mie. Bedanya ada pada penambahan kulit pangsit yang digoreng dan tahu yang digoreng.", "General",
+                R.drawable.bakso_malang)
+        comicsMaterisList.add(comicsMateri9)
+        val comicsMateri10 = Materi(10, "Nasi Krawu merupakan makanan khas dari daerah Gresik, Jawa Timur. Ciri khasnya adalah nasinya yang pulen dan disajikan dengan daun pisang. Lauknya dapat berupa sayatan daging sapi, semur daging, jeroan sapi, sambal petis dan serundeng.","General",
+            R.drawable.nasi_krawu)
+        comicsMaterisList.add(comicsMateri10)
+        return comicsMaterisList
     }
 }

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ComicsQuizActivity"
     android:fillViewport="true"
-    android:background="@color/yellow">
+    android:background="@drawable/nice">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
                 android:minHeight="50dp"
                 android:progress="1"
                 android:indeterminate="false"
-                android:progressBackgroundTint="@color/white"
+                android:progressBackgroundTint="@color/black"
                 android:progressTint="@color/red"
                 android:layout_marginTop="-20dp"
                 />
@@ -74,7 +74,7 @@
                 android:src="@drawable/general_category_image"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="6dp"
                 android:layout_gravity="center_vertical"
                 android:contentDescription="Option Arrow" />
 
@@ -178,6 +178,7 @@
             android:backgroundTint="@color/red"
             android:padding="10dp"
             android:textSize="16dp"
+            android:textColor="@color/white"
             android:fontFamily="@font/proxima_nova_semibold"
             android:enabled="false"/>
 

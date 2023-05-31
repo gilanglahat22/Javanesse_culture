@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".GeneralQuizActivity"
     android:fillViewport="true"
-    android:background="@color/red"
+    android:background="@drawable/quiz_background"
     android:id="@+id/result_view">
 
     <LinearLayout
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginTop="40dp"
-            android:textColor="@color/white"
+            android:textColor="@color/yellow"
             android:fontFamily="@font/brandon_grotesque_bold_webfont"
             android:textSize="49sp"
             android:text="Results"

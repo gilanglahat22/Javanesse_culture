@@ -1,41 +1,59 @@
 package com.example.zap
 
 import android.content.Intent
-import android.graphics.Color
-import android.net.Uri
-import android.os.Bundle
-import android.view.WindowManager
-import android.widget.VideoView
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.AppCompatButton
+import android.os.Bundle
+import android.view.View
+import androidx.constraintlayout.motion.widget.MotionLayout
 
 class SplashActivity : AppCompatActivity() {
-    var videoView: VideoView? = null
-    var btnNextActivity: AppCompatButton? = null
+    private lateinit var mediaPlayer: MediaPlayer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        requestWindowFeature(1)
-        window.setFlags(
-            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
-            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
-        )
-        window.statusBarColor = Color.TRANSPARENT
         setContentView(R.layout.activity_splash)
 
-        videoView = findViewById(R.id.videoView)
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
-        val path = "android.resource://" + packageName + "/" + R.raw.opening_video
-        val uri = Uri.parse(path)
-        videoView!!.setVideoURI(uri)
-        videoView!!.start()
+        mediaPlayer = MediaPlayer.create(this, R.raw.opening_sound)
+        mediaPlayer.isLooping = true // Set the music to loop indefinitely
+        mediaPlayer.setVolume(0.5f, 0.5f) // Set the volume (0.0f - 1.0f)
 
-        videoView!!.setOnCompletionListener {
-            if (isFinishing) {
-                true
+        val motionLayout = findViewById<MotionLayout>(R.id.motionLayout)
+        motionLayout.addTransitionListener(object : MotionLayout.TransitionListener {
+            override fun onTransitionTrigger(p0: MotionLayout?, p1: Int, p2: Boolean, p3: Float) {
+
             }
-            startActivity(Intent(this, MainActivity::class.java))
-            finish()
-        }
+
+            override fun onTransitionStarted(p0: MotionLayout?, p1: Int, p2: Int) {
+
+            }
+
+            override fun onTransitionChange(p0: MotionLayout?, p1: Int, p2: Int, p3: Float) {
+
+            }
+
+            override fun onTransitionCompleted(p0: MotionLayout?, p1: Int) {
+                startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+                finish()
+            }
+
+        })
+    }
+
+    override fun onStart() {
+        super.onStart()
+        mediaPlayer.start() // Start playing the music
+    }
+    override fun onPause() {
+        super.onPause()
+        mediaPlayer.pause() // Pause the music
+    }
+
+    override fun onStop() {
+        super.onStop()
+        mediaPlayer.stop() // Stop the music
+        mediaPlayer.release() // Release the MediaPlayer resources
     }
 }

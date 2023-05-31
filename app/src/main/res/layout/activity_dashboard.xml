@@ -7,18 +7,7 @@
     tools:context=".DashboardActivity"
     android:gravity="center"
     android:orientation="vertical"
-    android:backgroundTint="@color/white">
-
-    <ImageView
-        android:id="@+id/logoImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/background_dashboard_image"
-        android:outlineAmbientShadowColor="@color/light_grey"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+    android:background="@drawable/background_quiz">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -381,7 +370,7 @@
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:layout_marginTop="20dp"
-            app:cardBackgroundColor="@color/yellow"
+            app:cardBackgroundColor="@color/red"
             app:cardCornerRadius="12dp">
 
             <LinearLayout

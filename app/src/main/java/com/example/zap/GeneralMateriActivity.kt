@@ -60,7 +60,7 @@ class GeneralMateriActivity: AppCompatActivity(), View.OnClickListener {
         var general_category_bottom_image = findViewById<ImageView>(R.id.general_category_bottom_image)
 
         general_progressbar.progress = mCurrentPosition
-        tv_general_progress.text = "$mCurrentPosition" + "/" + 5
+        tv_general_progress.text = "$mCurrentPosition" + "/" + 4
         tv_general_materi.text = generalMateri!!.materi
         general_category_bottom_image.setImageResource(generalMateri.categoryImage)
 

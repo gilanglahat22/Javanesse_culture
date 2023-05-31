@@ -7,17 +7,7 @@
     tools:context=".MainDashboardActivity"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/white">
-
-    <ImageView
-        android:id="@+id/logoImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/background_dashboard_image"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+    android:background="@drawable/background_quiz">
 
     <ImageView
         android:layout_width="wrap_content"

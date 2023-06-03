@@ -17,7 +17,6 @@ class SplashActivity : AppCompatActivity() {
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
         mediaPlayer = MediaPlayer.create(this, R.raw.opening_sound)
-        mediaPlayer.isLooping = true // Set the music to loop indefinitely
         mediaPlayer.setVolume(0.5f, 0.5f) // Set the volume (0.0f - 1.0f)
 
         val motionLayout = findViewById<MotionLayout>(R.id.motionLayout)

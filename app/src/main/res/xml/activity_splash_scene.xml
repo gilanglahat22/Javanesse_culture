@@ -7,7 +7,7 @@
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
         motion:autoTransition="animateToEnd"
-        motion:duration="9000">
+        motion:duration="19000">
        <KeyFrameSet>
            <KeyAttribute
                motion:motionTarget="@+id/logoImageView"

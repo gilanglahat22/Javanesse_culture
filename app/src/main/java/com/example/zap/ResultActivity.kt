@@ -9,16 +9,18 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import android.media.SoundPool
 import android.widget.Toast
 
 class ResultActivity : AppCompatActivity() {
 
-    
-    private val soundId = 1
-
+    private lateinit var mediaPlayer: MediaPlayer
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
+
+        mediaPlayer = MediaPlayer.create(this, R.raw.results_sound_effect)
+        mediaPlayer.setVolume(0.5f, 0.5f) // Set the volume (0.0f - 1.0f)
 
         //Make the View FullScreen
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
@@ -43,7 +45,7 @@ class ResultActivity : AppCompatActivity() {
         val correctOptions = intent.getIntExtra(Constants.CORRECT_ANSWERS, 0)
         val categoryName = intent.getStringExtra(Constants.CATEGORY)
 
-        if (categoryName == "Rumah Adat") {
+        if (categoryName == "General") {
             if (correctOptions > highestScoreGeneral) {
                 editor.apply {
                     putInt(Constants.GENERAL_HIGHEST_SCORE, correctOptions)
@@ -51,7 +53,7 @@ class ResultActivity : AppCompatActivity() {
                 }
             }
         }
-        if (categoryName == "Musik dan tarian") {
+        if (categoryName == "History") {
             if (correctOptions > highestScoreHistory) {
                 editor.apply {
                     putInt(Constants.HISTORY_HIGHEST_SCORE, correctOptions)
@@ -59,7 +61,7 @@ class ResultActivity : AppCompatActivity() {
                 }
             }
         }
-        if (categoryName == "Suku dan Senjata") {
+        if (categoryName == "Movies") {
             if (correctOptions > highestScoreMovies) {
                 editor.apply {
                     putInt(Constants.MOVIES_HIGHEST_SCORE, correctOptions)
@@ -67,7 +69,7 @@ class ResultActivity : AppCompatActivity() {
                 }
             }
         }
-        if (categoryName == "Pakaian dan Makanan") {
+        if (categoryName == "Comics") {
             if (correctOptions > highestScoreComics) {
                 editor.apply {
                     putInt(Constants.COMICS_HIGHEST_SCORE, correctOptions)
@@ -75,12 +77,25 @@ class ResultActivity : AppCompatActivity() {
                 }
             }
         }
-
-        tv_score.text = "You scored a total of $correctOptions out of $totalQuestions for $categoryName"
+        tv_score.text = "Akurasi skor kamu adalah $correctOptions/$totalQuestions"
 
         btn_finish.setOnClickListener {
-            startActivity(Intent(this, MainDashboardActivity::class.java))
+            startActivity(Intent(this, DashboardActivity::class.java))
         }
+    }
 
+    override fun onStart() {
+        super.onStart()
+        mediaPlayer.start() // Start playing the music
+    }
+    override fun onPause() {
+        super.onPause()
+        mediaPlayer.pause() // Pause the music
+    }
+
+    override fun onStop() {
+        super.onStop()
+        mediaPlayer.stop() // Stop the music
+        mediaPlayer.release() // Release the MediaPlayer resources
     }
 }

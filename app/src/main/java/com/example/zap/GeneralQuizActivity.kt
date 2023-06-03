@@ -3,6 +3,7 @@ package com.example.zap
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -19,6 +20,8 @@ class GeneralQuizActivity : AppCompatActivity(), View.OnClickListener {
     private var mCorrectOptions: Int = 0
     private var mUsername: String? = null
     private var mCategory: String? = null
+    private lateinit var mediaPlayerBenar: MediaPlayer
+    private lateinit var mediaPlayerSalah: MediaPlayer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,7 +29,11 @@ class GeneralQuizActivity : AppCompatActivity(), View.OnClickListener {
 
         //Make the View FullScreen
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+        mediaPlayerBenar = MediaPlayer.create(this, R.raw.sound_benar)
+        mediaPlayerBenar.setVolume(0.5f, 0.5f) // Set the volume (0.0f - 1.0f)
 
+        mediaPlayerSalah = MediaPlayer.create(this, R.raw.sound_salah)
+        mediaPlayerSalah.setVolume(0.5f, 0.5f) // Set the volume (0.0f - 1.0f)
         mUsername = intent.getStringExtra(Constants.USERNAME)
         mCategory = intent.getStringExtra(Constants.CATEGORY)
 
@@ -82,8 +89,6 @@ class GeneralQuizActivity : AppCompatActivity(), View.OnClickListener {
         tv_general_option_one.text = generalQuestion.optionOne
         tv_general_option_two.text = generalQuestion.optionTwo
         tv_general_option_three.text = generalQuestion.optionThree
-
-
     }
 
     private fun defaultOptionsView() {
@@ -154,16 +159,19 @@ class GeneralQuizActivity : AppCompatActivity(), View.OnClickListener {
                     val question = mGeneralQuestionsList?.get(mCurrentPosition - 1)
 
                     if (question!!.correctAnswer != mSelectedOptionPosition) {
+                        mediaPlayerSalah.start()
                         tv_general_option_one.setClickable(false)
                         tv_general_option_two.setClickable(false)
                         tv_general_option_three.setClickable(false)
                         answerView(mSelectedOptionPosition, R.drawable.wrong_selected_option_style)
                     } else {
+                        mediaPlayerBenar.start()
                         mCorrectOptions++
                         tv_general_option_one.setClickable(false)
                         tv_general_option_two.setClickable(false)
                         tv_general_option_three.setClickable(false)
                     }
+
                     answerView(question.correctAnswer, R.drawable.correct_selected_option_style)
 
                     if (mCurrentPosition == mGeneralQuestionsList!!.size) {
@@ -214,5 +222,4 @@ class GeneralQuizActivity : AppCompatActivity(), View.OnClickListener {
                 R.drawable.general_selected_option_style
         )
     }
-
 }

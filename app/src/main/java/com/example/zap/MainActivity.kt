@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                 val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
                 val editor = sharedPref.edit()
 
-                val intent = Intent(this, MainDashboardActivity::class.java)
+                val intent = Intent(this, DashboardMateriActivity::class.java)
 
                 editor.apply{
                     putString(Constants.USERNAME, et_name.text.toString())

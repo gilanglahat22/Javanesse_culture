@@ -12,31 +12,30 @@
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme">
         </activity>
-        <activity android:name=".ComicsQuizActivity" />
-        <activity android:name=".MoviesQuizActivity" />
-        <activity android:name=".HistoryQuizActivity" />
-        <activity android:name=".GeneralQuizActivity" />
-        <activity android:name=".ComicsMateriActivity" />
-        <activity android:name=".MoviesMateriActivity" />
-        <activity android:name=".HistoryMateriActivity" />
-        <activity android:name=".GeneralMateriActivity" />
-        <activity
-            android:name=".MainDashboardActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ComicsQuizActivity"/>
+        <activity android:name=".MoviesQuizActivity"/>
+        <activity android:name=".HistoryQuizActivity"/>
+        <activity android:name=".GeneralQuizActivity"/>
+        <activity android:name=".ComicsMateriActivity"/>
+        <activity android:name=".MoviesMateriActivity"/>
+        <activity android:name=".HistoryMateriActivity"/>
+        <activity android:name=".GeneralMateriActivity"/>
         <activity
             android:name=".DashboardActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize" />
+            android:windowSoftInputMode="adjustResize" 
+            />
         <activity
             android:name=".DashboardMateriActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize" />
+            android:windowSoftInputMode="adjustResize" 
+            />
         <activity
             android:name=".SplashActivity"
             android:isScrollContainer="true"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme"
+            android:exported="true"
             android:windowSoftInputMode="adjustUnspecified">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -77,7 +77,6 @@
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center_vertical"
                 android:contentDescription="Option Arrow" />
-
         </LinearLayout>
 
         <Button
@@ -102,8 +101,6 @@
             android:textColor="@color/white"
             android:fontFamily="@font/proxima_nova_semibold"
             android:enabled="false"/>
-
-
     </LinearLayout>
 
 </ScrollView>

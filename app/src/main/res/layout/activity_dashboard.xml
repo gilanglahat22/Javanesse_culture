@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -67,96 +67,9 @@
 
     <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:rowCount="6"
-        android:columnCount="2"
-        android:alignmentMode="alignMargins"
-        android:columnOrderPreserved="false"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="140dp"
-            android:layout_height="70dp"
-            app:cardBackgroundColor="@color/light_blue"
-            android:layout_marginTop="0dp"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/total_points"
-                    android:text="2500"
-                    android:layout_marginTop="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/proxima_nova_bold"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:text="Points"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/proxima_nova_regular"
-                    android:textSize="20sp" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="140dp"
-            android:layout_height="70dp"
-            app:cardBackgroundColor="@color/light_blue"
-            android:layout_marginTop="0dp"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="10dp"
-            android:layout_marginLeft="32dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/total_wins"
-                    android:text="5"
-                    android:layout_marginTop="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/proxima_nova_bold"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:text="Wins"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/proxima_nova_regular"
-                    android:textSize="20sp" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-    </GridLayout>
-
-    <GridLayout
-        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="230dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginBottom="100dp"
         android:rowCount="5"
         android:columnCount="1"
         android:alignmentMode="alignMargins"
@@ -425,4 +338,18 @@
 
     </GridLayout>
 
-</RelativeLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationViewDashboard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/yellow"
+        app:itemTextColor="@drawable/nav_color"
+        app:itemIconTint="@drawable/nav_color"
+        app:menu="@menu/bottom_navbar">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

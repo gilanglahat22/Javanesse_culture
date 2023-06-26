@@ -68,7 +68,7 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="142dp"
+        android:layout_marginTop="143dp"
         android:layout_marginBottom="100dp"
         android:rowCount="5"
         android:columnCount="1"
@@ -76,7 +76,6 @@
         android:columnOrderPreserved="false"
         android:paddingLeft="40dp"
         android:paddingRight="40dp">
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -107,8 +106,8 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/general_category"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_marginTop="20dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="15dp"
             app:cardBackgroundColor="@color/dark_grey"
             app:cardCornerRadius="12dp">
 
@@ -119,10 +118,10 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="38dp"
+                    android:layout_height="42dp"
                     android:src="@drawable/icon_rumah_adat"
-                    android:layout_marginTop="18dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginLeft="30dp"
                     android:layout_gravity="left"
                     android:contentDescription="Dashboard Yellow Shape" />
@@ -165,8 +164,8 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/history_category"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_marginTop="20dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="15dp"
             app:cardBackgroundColor="@color/light_blue"
             app:cardCornerRadius="12dp">
 
@@ -177,10 +176,10 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="38dp"
+                    android:layout_height="42dp"
                     android:src="@drawable/musik_dan_tarian"
-                    android:layout_marginTop="18dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginLeft="30dp"
                     android:layout_gravity="left"
                     android:contentDescription="Dashboard Yellow Shape" />
@@ -223,8 +222,8 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/movies_category"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_marginTop="20dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="15dp"
             app:cardBackgroundColor="#a020f0"
             app:cardCornerRadius="12dp">
 
@@ -235,10 +234,10 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="38dp"
+                    android:layout_height="42dp"
                     android:src="@drawable/icon_suku"
-                    android:layout_marginTop="18dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginLeft="30dp"
                     android:layout_gravity="left"
                     android:contentDescription="Dashboard Yellow Shape" />
@@ -281,8 +280,8 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/comics_category"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_marginTop="20dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="15dp"
             app:cardBackgroundColor="@color/red"
             app:cardCornerRadius="12dp">
 
@@ -294,9 +293,9 @@
 
                 <ImageView
                     android:layout_width="38dp"
-                    android:layout_height="40dp"
+                    android:layout_height="42dp"
                     android:src="@drawable/icon_makanan_khas_daerah"
-                    android:layout_marginTop="18dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginLeft="30dp"
                     android:layout_gravity="left"
                     android:contentDescription="Dashboard Yellow Shape" />

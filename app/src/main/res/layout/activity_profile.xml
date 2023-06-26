@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="-67dp"
+    tools:context=".ProfileActivity"
+    android:fillViewport="true"
+    android:background="@drawable/profile_pengembang">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="642dp"
+        android:orientation="vertical"
+        android:padding="40dp"
+        android:gravity="top|center">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="#a020f0"
+            android:padding="10dp"
+            android:text="Kembali"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:enabled="false"/>
+    </LinearLayout>
+
+</ScrollView>

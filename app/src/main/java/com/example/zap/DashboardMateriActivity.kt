@@ -45,49 +45,67 @@ class DashboardMateriActivity : AppCompatActivity()  {
         tv_greeting.text = userName
 
         //Get the Front end Categories by CardView
-        val general_category = findViewById<CardView>(R.id.general_category)
-        val history_category = findViewById<CardView>(R.id.history_category)
-        val movies_category = findViewById<CardView>(R.id.movies_category)
+//        val general_category = findViewById<CardView>(R.id.general_category)
+//        val history_category = findViewById<CardView>(R.id.history_category)
+//        val movies_category = findViewById<CardView>(R.id.movies_category)
         val comics_category = findViewById<CardView>(R.id.comics_category)
+        val manfaat_card = findViewById<CardView>(R.id.menjaga)
+        val profile_pengembang_card = findViewById<CardView>(R.id.profile_pengembang)
 //        val buttonNavigationMateri = findViewById<BottomNavigationView>(R.id.materi)
 //        val buttonNavigationQuiz = findViewById<BottomNavigationView>(R.id.quiz)
-        val mCategoryGen = findViewById<TextView>(R.id.general_category_name)
-        val mCategoryHis = findViewById<TextView>(R.id.history_category_name)
-        val mCategoryMov = findViewById<TextView>(R.id.movies_category_name)
+//        val mCategoryGen = findViewById<TextView>(R.id.general_category_name)
+//        val mCategoryHis = findViewById<TextView>(R.id.history_category_name)
+//        val mCategoryMov = findViewById<TextView>(R.id.movies_category_name)
         val mCategoryCom = findViewById<TextView>(R.id.comics_category_name)
 
-        //General Category OnClickListener
-        general_category.setOnClickListener{
-            val intent = Intent(this, GeneralMateriActivity::class.java)
-            intent.putExtra(Constants.USERNAME, userName)
-            intent.putExtra(Constants.CATEGORY, mCategoryGen.text.toString())
-            startActivity(intent);
-            finish();
-        }
-
-        //History Category OnClickListener
-        history_category.setOnClickListener{
-            val intent = Intent(this, HistoryMateriActivity::class.java)
-            intent.putExtra(Constants.USERNAME, userName)
-            intent.putExtra(Constants.CATEGORY, mCategoryHis.text.toString())
-            startActivity(intent);
-            finish();
-        }
-
-        //Movies Category OnClickListener
-        movies_category.setOnClickListener{
-            val intent = Intent(this, MoviesMateriActivity::class.java)
-            intent.putExtra(Constants.USERNAME, userName)
-            intent.putExtra(Constants.CATEGORY, mCategoryMov.text.toString())
-            startActivity(intent);
-            finish();
-        }
+//        //General Category OnClickListener
+//        general_category.setOnClickListener{
+//            val intent = Intent(this, GeneralMateriActivity::class.java)
+//            intent.putExtra(Constants.USERNAME, userName)
+//            intent.putExtra(Constants.CATEGORY, mCategoryGen.text.toString())
+//            startActivity(intent);
+//            finish();
+//        }
+//
+//        //History Category OnClickListener
+//        history_category.setOnClickListener{
+//            val intent = Intent(this, HistoryMateriActivity::class.java)
+//            intent.putExtra(Constants.USERNAME, userName)
+//            intent.putExtra(Constants.CATEGORY, mCategoryHis.text.toString())
+//            startActivity(intent);
+//            finish();
+//        }
+//
+//        //Movies Category OnClickListener
+//        movies_category.setOnClickListener{
+//            val intent = Intent(this, MoviesMateriActivity::class.java)
+//            intent.putExtra(Constants.USERNAME, userName)
+//            intent.putExtra(Constants.CATEGORY, mCategoryMov.text.toString())
+//            startActivity(intent);
+//            finish();
+//        }
 
         //Comics Category OnClickListener
         comics_category.setOnClickListener{
-            val intent = Intent(this, ComicsMateriActivity::class.java)
+            val intent = Intent(this, VideoPembelajaranActivity::class.java)
             intent.putExtra(Constants.USERNAME, userName)
             intent.putExtra(Constants.CATEGORY, mCategoryCom.text.toString())
+            startActivity(intent);
+            finish();
+        }
+
+        manfaat_card.setOnClickListener{
+            val intent = Intent(this, ManfaatActivity::class.java)
+            intent.putExtra(Constants.USERNAME, userName)
+            intent.putExtra(Constants.CATEGORY, "manfaat")
+            startActivity(intent);
+            finish();
+        }
+
+        profile_pengembang_card.setOnClickListener{
+            val intent = Intent(this, ProfileActivity::class.java)
+            intent.putExtra(Constants.USERNAME, userName)
+            intent.putExtra(Constants.CATEGORY, "profile pengembang")
             startActivity(intent);
             finish();
         }

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManfaatActivity"
+    android:fillViewport="true"
+    android:background="@drawable/materi_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:padding="40dp"
+        android:gravity="top|center">
+
+        <TextView
+            android:id="@+id/manfaat_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:textSize="22sp"
+            tools:text="Manfaat menjaga keberagaman suku dan budaya:"
+            />
+        <TextView
+            android:id="@+id/manfaat_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:textSize="22sp"
+            tools:text="1. Sebagai identitas bangsa kepada dunia internasional "
+            />
+        <TextView
+            android:id="@+id/manfaat_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:textSize="22sp"
+            tools:text="2. Sebagai simbol pariwisata yang menarik"
+            />
+        <TextView
+            android:id="@+id/manfaat_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:textSize="22sp"
+            tools:text="3. Sebagai mata pencaharian warga setempat"
+            />
+        <TextView
+            android:id="@+id/manfaat_text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:textSize="22sp"
+            tools:text="4. Menambah pendapatan negara"
+            />
+        <TextView
+            android:id="@+id/manfaat_text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:textSize="22sp"
+            tools:text="5. Menambah sikap toleransi          "
+            />
+        <TextView
+            android:id="@+id/manfaat_text7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:textSize="22sp"
+            tools:text="6. Menambah wawasan                  "
+            />
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#a020f0"
+            android:padding="10dp"
+            android:text="Kembali"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:enabled="false"/>
+    </LinearLayout>
+
+</ScrollView>

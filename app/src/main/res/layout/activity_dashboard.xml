@@ -68,7 +68,7 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="143dp"
+        android:layout_marginTop="158dp"
         android:layout_marginBottom="100dp"
         android:rowCount="5"
         android:columnCount="1"
@@ -104,11 +104,11 @@
             </LinearLayout>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/general_category"
+            android:id="@+id/video_pembelajaran"
             android:layout_width="match_parent"
-            android:layout_height="68dp"
-            android:layout_marginTop="15dp"
-            app:cardBackgroundColor="@color/dark_grey"
+            android:layout_height="61dp"
+            android:layout_marginTop="80dp"
+            app:cardBackgroundColor="#8a1156"
             app:cardCornerRadius="12dp">
 
             <LinearLayout
@@ -120,15 +120,14 @@
                 <ImageView
                     android:layout_width="38dp"
                     android:layout_height="42dp"
-                    android:src="@drawable/icon_rumah_adat"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="30dp"
                     android:layout_gravity="left"
                     android:contentDescription="Dashboard Yellow Shape" />
 
                 <TextView
-                    android:id="@+id/general_category_name"
-                    android:text="Rumah Adat"
+                    android:id="@+id/video_pembelajaran_name"
+                    android:text="Video Pembelajaran"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -136,37 +135,16 @@
                     android:textColor="@color/white"
                     android:fontFamily="@font/proxima_nova_semibold"
                     android:textSize="17sp" />
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/crown_icon"
-                    android:layout_marginTop="-40dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_gravity="right"
-                    android:contentDescription="Dashboard Yellow Shape" />
-
-                <TextView
-                    android:id="@+id/highest_score_general"
-                    tools:text="8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="right"
-                    android:layout_marginTop="-2dp"
-                    android:layout_marginRight="26dp"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/proxima_nova_semibold"
-                    android:textSize="20sp" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/history_category"
+            android:id="@+id/petunjuk_penggunaan"
             android:layout_width="match_parent"
-            android:layout_height="68dp"
-            android:layout_marginTop="15dp"
-            app:cardBackgroundColor="@color/light_blue"
+            android:layout_height="61dp"
+            android:layout_marginTop="43dp"
+            app:cardBackgroundColor="#2b118a"
             app:cardCornerRadius="12dp">
 
             <LinearLayout
@@ -178,15 +156,14 @@
                 <ImageView
                     android:layout_width="38dp"
                     android:layout_height="42dp"
-                    android:src="@drawable/musik_dan_tarian"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="30dp"
                     android:layout_gravity="left"
                     android:contentDescription="Dashboard Yellow Shape" />
 
                 <TextView
-                    android:id="@+id/history_category_name"
-                    android:text="Musik dan tarian"
+                    android:id="@+id/petunjuk_penggunaan_name"
+                    android:text="Petunjuk Penggunaan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -195,145 +172,12 @@
                     android:fontFamily="@font/proxima_nova_semibold"
                     android:textSize="17sp" />
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/crown_icon"
-                    android:layout_marginTop="-40dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_gravity="right"
-                    android:contentDescription="Dashboard Yellow Shape" />
-
-                <TextView
-                    android:id="@+id/highest_score_history"
-                    tools:text="8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="right"
-                    android:layout_marginTop="-2dp"
-                    android:layout_marginRight="26dp"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/proxima_nova_semibold"
-                    android:textSize="20sp" />
-
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/movies_category"
-            android:layout_width="match_parent"
-            android:layout_height="68dp"
-            android:layout_marginTop="15dp"
-            app:cardBackgroundColor="#a020f0"
-            app:cardCornerRadius="12dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="38dp"
-                    android:layout_height="42dp"
-                    android:src="@drawable/icon_suku"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_gravity="left"
-                    android:contentDescription="Dashboard Yellow Shape" />
 
-                <TextView
-                    android:id="@+id/movies_category_name"
-                    android:text="Suku dan Senjata"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_marginTop="-32dp"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/proxima_nova_semibold"
-                    android:textSize="17sp" />
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/crown_icon"
-                    android:layout_marginTop="-40dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_gravity="right"
-                    android:contentDescription="Dashboard Yellow Shape" />
-
-                <TextView
-                    android:id="@+id/highest_score_movies"
-                    tools:text="8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="right"
-                    android:layout_marginTop="-2dp"
-                    android:layout_marginRight="26dp"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/proxima_nova_semibold"
-                    android:textSize="20sp" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/comics_category"
-            android:layout_width="match_parent"
-            android:layout_height="68dp"
-            android:layout_marginTop="15dp"
-            app:cardBackgroundColor="@color/red"
-            app:cardCornerRadius="12dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="38dp"
-                    android:layout_height="42dp"
-                    android:src="@drawable/icon_makanan_khas_daerah"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_gravity="left"
-                    android:contentDescription="Dashboard Yellow Shape" />
-
-                <TextView
-                    android:id="@+id/comics_category_name"
-                    android:text="Pakaian dan Makanan"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_marginTop="-32dp"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/proxima_nova_semibold"
-                    android:textSize="17sp" />
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/crown_icon"
-                    android:layout_marginTop="-40dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_gravity="right"
-                    android:contentDescription="Dashboard Yellow Shape" />
-
-                <TextView
-                    android:id="@+id/highest_score_comics"
-                    tools:text="8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="right"
-                    android:layout_marginTop="-2dp"
-                    android:layout_marginRight="26dp"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/proxima_nova_semibold"
-                    android:textSize="20sp" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
 
     </GridLayout>
 

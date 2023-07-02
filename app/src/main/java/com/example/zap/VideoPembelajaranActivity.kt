@@ -37,7 +37,7 @@ class VideoPembelajaranActivity : AppCompatActivity() {
         findViewById<BottomNavigationView>(R.id.bottomNavigationViewBelajar).setOnNavigationItemSelectedListener  {
             when(it.itemId) {
                 R.id.back -> {
-                    val intent = Intent(this, DashboardMateriActivity::class.java)
+                    val intent = Intent(this, DashboardActivity::class.java)
                     intent.putExtra(Constants.USERNAME, mUsername)
                     intent.putExtra(Constants.CATEGORY, mCategory)
                     startActivity(intent);

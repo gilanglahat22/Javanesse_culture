@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManfaatActivity"
+    android:fillViewport="true"
+    android:background="@drawable/background_dashboard_image">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:padding="40dp"
+        android:gravity="top|center">
+
+        <TextView
+            android:id="@+id/petunjuk_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginTop="-5dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:textSize="20sp"
+            tools:text="Petunjuk penggunaan aplikasi"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:src="@drawable/video_pembelajaran_button"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_gravity="left"
+                android:contentDescription="Dashboard Yellow Shape" />
+
+            <TextView
+                android:id="@+id/petunjuk_text2"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-44dp"
+                android:layout_marginRight="-95dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="start"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                tools:text="Tombol untuk mengakses video pembelajaran" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:src="@drawable/petunjuk_penggunaan_button"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_gravity="left"
+                android:contentDescription="Dashboard Yellow Shape" />
+
+            <TextView
+                android:id="@+id/petunjuk_text3"
+                android:layout_width="139dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="-44dp"
+                android:layout_marginRight="-95dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="start"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                tools:text="Tombol untuk mengakses petunjuk penggunaan aplikasi" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile_button"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_gravity="left"
+                android:contentDescription="Dashboard Yellow Shape" />
+
+            <TextView
+                android:id="@+id/petunjuk_text4"
+                android:layout_width="139dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="-44dp"
+                android:layout_marginRight="-95dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="start"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                tools:text="Tombol untuk mengakses profile pembuat aplikasi" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:src="@drawable/manfaat_button"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_gravity="left"
+                android:contentDescription="Dashboard Yellow Shape" />
+
+            <TextView
+                android:id="@+id/petunjuk_text5"
+                android:layout_width="139dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="-44dp"
+                android:layout_marginRight="-95dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="start"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                tools:text="Tombol untuk mengakses laman manfaat menjaga budaya dan suku" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:src="@drawable/quiz_rumah_adat_button"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_gravity="left"
+                android:contentDescription="Dashboard Yellow Shape" />
+
+            <TextView
+                android:id="@+id/petunjuk_text6"
+                android:layout_width="141dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="-47dp"
+                android:layout_marginRight="-95dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="start"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                tools:text="Tombol untuk mengakses materi terkait rumah adat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:src="@drawable/suku_dan_senjata_button"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_gravity="left"
+                android:contentDescription="Dashboard Yellow Shape" />
+
+            <TextView
+                android:id="@+id/petunjuk_text7"
+                android:layout_width="141dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="-47dp"
+                android:layout_marginRight="-95dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="start"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                tools:text="Tombol untuk mengakses materi terkait suku dan senjata adat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:src="@drawable/pakaian_dan_makanan_button"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_gravity="left"
+                android:contentDescription="Dashboard Yellow Shape" />
+
+            <TextView
+                android:id="@+id/petunjuk_text8"
+                android:layout_width="141dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="-47dp"
+                android:layout_marginRight="-95dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="start"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                tools:text="Tombol untuk mengakses materi terkait dengan pakaian dan makanan adat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:src="@drawable/quiz_musik_dan_tarian_button"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_gravity="left"
+                android:contentDescription="Dashboard Yellow Shape" />
+
+            <TextView
+                android:id="@+id/petunjuk_text9"
+                android:layout_width="141dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="-47dp"
+                android:layout_marginRight="-95dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="start"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                tools:text="Tombol untuk mengakses materi terkait dengan musik dan tarian adat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:src="@drawable/kembali_button"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_gravity="left"
+                android:contentDescription="Dashboard Yellow Shape" />
+
+            <TextView
+                android:id="@+id/petunjuk_text10"
+                android:layout_width="141dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="-47dp"
+                android:layout_marginRight="-95dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="start"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                tools:text="Tombol untuk kembali atau keluar ke halaman sebelumnya" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#a020f0"
+            android:padding="10dp"
+            android:text="Kembali"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:enabled="false"/>
+    </LinearLayout>
+
+</ScrollView>

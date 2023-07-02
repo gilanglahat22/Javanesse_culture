@@ -25,6 +25,7 @@
         <activity android:name=".ManfaatActivity"/>
         <activity android:name=".ProfileActivity"/>
         <activity android:name=".VideoPembelajaranActivity"/>
+        <activity android:name=".PetunjukPembelajaranActivity"/>
         <activity
             android:name=".DashboardActivity"
             android:screenOrientation="portrait"
